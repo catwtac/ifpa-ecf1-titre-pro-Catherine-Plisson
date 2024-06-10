@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #16a34a; /* Green background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.logo {
+    height: 40px;
+}
+
+#green-btn,
+#blue-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.green {
+    background-color: #16a34a; /* Green color */
+}
+
+.green:hover {
+    background-color: #22c55e; /* Green hover color */
+}
+
+.blue {
+    background-color: #2563eb; /* Blue color */
+}
+
+.blue:hover {
+    background-color: #3b82f6; /* Blue hover color */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
+    text-decoration: underline 2px solid white; /* Thin solid underline */
+}
+
+/* Main Content */
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 300px; 
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 24px;
+    text-decoration: underline 2px dotted #16a34a; /* Green dotted underline */
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #16a34a; /* Green border */
+}
+
+aside {
+    font-size: 0.9em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:required,
+input[type="email"]:required,
+input[type="tel"]:required,
+textarea:required {
+    background-color: #f2f2f2; /* Couleur de fond grise */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #16a34a; /* Green color */
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #22c55e; /* Green hover color */
+}
+
+/* Footer */
+footer {
+    background-color: #16a34a; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px; /* Taille de police en petit */
+}
+
+/* Media queries pour les appareils mobiles */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact-form {
+        max-width: 80%;
+    }
+}

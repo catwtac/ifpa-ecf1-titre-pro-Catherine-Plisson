@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe - Développeur Web</title>
+  <meta name="description" content="cv au format HTML d'un développeur John Doe">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="images/logo-john-doe.svg" alt="John Doe Logo" class="logo">
+      <button id="green-btn" class="color-btn green"></button>
+      <button id="blue-btn" class="color-btn blue"></button>
+    </nav>
+    <h1>John Doe - Développeur Web</h1>
+  </header>
+  <main>
+    <section id="profile">
+      <h2>Mon Profil</h2>
+      <div class="profile-content">
+        <img src="images/portrait.jpg" alt="John Doe" class="profile-pic">
+        <aside>
+          <p>Développeur web de père en fils, passionné par la technologie et l'innovation. 
+          J'ai acquis une expertise en HTML, CSS, JavaScript et Git, me permettant de créer 
+          des sites web performants et esthétiques. Prêt à relever de nouveaux défis.</p>
+        </aside>
+      </div>
+    </section>
+            
+    <section id="skills">
+      <h2>Mes compétences</h2>
+      <div class="skills-container">
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><img src="images/html.svg" alt="HTML5" class="skill-icon"></a>
+        <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><img src="images/css.svg" alt="CSS3" class="skill-icon"></a>
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><img src="images/js.svg" alt="JavaScript" class="skill-icon"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/git.svg" alt="GitHub" class="skill-icon"></a>
+      </div>
+    </section>
+        
+    <section id="contact">
+      <h2>Me contacter</h2>
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nom *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="surname">Prénom *</label>
+            <input type="text" id="surname" name="surname" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone (facultatif)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required minlength="15"></textarea>
+          <span class="error-message" style="color: red; display: none;">Le message doit contenir au moins 15 caractères.</span>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+<footer>
+    © John Doe Officiel
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
